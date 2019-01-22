@@ -1,0 +1,140 @@
+/*print*/
+
+@media print {
+	.tm-sidebar,
+	section+section,
+	#about {
+		display: none;
+	}
+	.tm-banner {
+		max-height: 250px;
+		max-width: 600px;
+	}
+	.col-21 {
+		width: 55%;
+		float: left;
+		margin-top: -40px;
+	}
+	.img-1 {
+		width: 45%;
+		float: right;
+	}
+	h2:first-child {
+		color: blue;
+	}
+	.img-1 img {
+		width: 250px;
+		margin-top: 80px;
+	}
+	p:first-letter {
+		color: #87CEFA;
+		font-size: 30px;
+	}
+	h2+p {
+		font-style: italic;
+	}
+	.col-21 p {
+		line-height: 1.9;
+		text-indent: 1.5em;
+	}
+}
+
+
+/*normal*/
+
+@media screen {
+	.col-21 {
+		margin-top: 155px;
+		width: 33%;
+		float: left;
+	}
+	.img-1 {
+		width: 67%;
+		float: right;
+	}
+	div.tm-content-box,
+	div.tm-sidebar {
+		box-shadow: 0 0 20px rgba(0, 0, 0, 0.60);
+	}
+	ul.boxes.gallery-container li.box.box-bg:hover {
+		background-color: #87CEFA;
+	}
+	.tm-box-bg-title:hover {
+		color: #fff;
+		font-weight: bold;
+	}
+	p:first-letter {
+		color: #87CEFA;
+		font-size: 30px;
+	}
+	section::before {
+		content: "";
+		height: 0px;
+		width: 0px;
+		border-top: 30px solid #87CEFA;
+		border-right: 130px solid transparent;
+		border-bottom: 15px solid transparent;
+		border-left: 0px solid transparent;
+	}
+	h2.gainsboro {
+		color: gainsboro;
+		letter-spacing: 5px;
+	}
+	h2+p {
+		font-style: italic;
+	}
+	p {
+		line-height: 1.9;
+		text-indent: 1.5em;
+	}
+	.tm-banner-text {
+		line-height: 1.6;
+		text-indent: 1em;
+	}
+	#black-link li a {
+		color: black;
+	}
+	#black-link li a:visited {
+		text-decoration: underline;
+	}
+	.padding-medium li a.text::after {
+		content: "New";
+		color: red;
+		vertical-align: super;
+		font-size: 12px;
+		position: absolute;
+	}
+	#black-link li a:hover {
+		text-decoration: underline double;
+		color: #87CEFA
+	}
+	.gallery-container .box-work:nth-child(2n) {
+		background-color: rgba(160, 160, 160, 0.2);
+	}
+	.gallery-container .box-work {
+		padding: 10px;
+	}
+	div.mandatory-field::after {
+		content: "*";
+		color: red;
+		font-weight: bold;
+	}
+	form.contact-form button {
+		color: #87CEFA;
+		background: none;
+		border-color: #87CEFA;
+		box-shadow: 5px -4px 5px -1px rgba(0, 0, 0, 0.62);
+		float: right;
+		transition-duration: 0.4s;
+	}
+	form.contact-form button:hover {
+		background-color: #87CEFA;
+		color: white;
+		font-weight: bold;
+		border-color: #85CEFA;
+		box-shadow: 1px -1px 3px -1px rgba(0, 0, 0, 0.62);
+	}
+	li.tm-nav-item:hover {
+		background: gray;
+	}
+}
