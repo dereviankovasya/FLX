@@ -1,0 +1,187 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: $font;
+  background: $bgBody;
+
+
+  header {
+    background: $hederImage;
+    height: 100vh;
+    margin-bottom: 20px;
+    .top-wrapper {
+      display: flex;
+      justify-content: space-between;
+      img {
+        width: 230px;
+        height: 130px;
+      }
+      nav {
+        a {
+          text-transform: uppercase;
+          text-decoration: none;
+          color: $hederTextColor;
+          display: inline-block;
+          padding: 20px 120px;
+          &:nth-child(2) {
+            border-right: 2px solid #ced7e8;
+            border-left: 2px solid #ced7e8;
+          }
+        }
+      }
+    }
+    section {
+      text-align: center;
+      margin-top: 250px;
+      h1 {
+        color: $hederTextColor;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 26px;
+      }
+      a {
+        display: inline-block;
+        color: white;
+        text-transform: uppercase;
+        text-decoration: none;
+        background: $bgButton;
+        padding: 15px 70px;
+        margin-top: 15px;
+      }
+    }
+  }
+  main {
+    margin: 0 auto;
+    width: 960px;
+    .toolbar {
+      text-align: right;
+      padding-bottom: 10px;
+      input {
+        padding: 10px 15px;
+      }
+    }
+    .post-list {
+      h1 {color:$colorText;
+
+        text-align: right;
+        text-transform: uppercase;
+      }
+      article {
+        display: flex;
+        margin-bottom: 15px;
+        padding: 10px 15px 10px 10px;
+        background: $bgArticle;
+        img {
+          margin-right: 10px;
+        }
+        .btn {
+          float: right;
+          margin-top: 24px;
+          color: white;
+          text-transform: uppercase;
+          text-decoration: none;
+          background: $bgButton;
+          padding: 10px 60px;
+          border: none;
+        }
+        .post {
+          .post-description {
+            font-size: 13px;
+            color: $postDsColor;
+            padding: 10px 0;
+            border-bottom: 1px solid $colorText;
+          }
+          h3 {
+            color: $postHdColor;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin: 5px 0;
+          }
+          p {color:$postParColor;
+            font-size: 16px;
+            line-height: 1.6em;
+          }
+        }
+      }
+    }
+    .about {
+      padding: 50px 15px;
+      h1 {color:$colorText;
+        text-align: right;
+        text-transform: uppercase;
+      }
+      p {color:$colorText;
+        margin-bottom: 25px;
+        font-size: 17px;
+      }
+      img {
+        width: 100%;
+      }
+    }
+    .contact-form {
+      text-align: right;
+      h1{color:$colorText;}
+      h4 {color:$colorText;
+        text-transform: uppercase;
+        font-size: 15px;
+      }
+      form {
+        div {
+          display: flex;
+          justify-content: space-between;
+        }
+        label {
+          margin-top: 22px;
+          display: flex;
+          flex-direction: column;
+          
+          span {
+            position: relative;
+            margin: 3px;
+            color: $postHdColor;
+          }
+          input {
+            border: 1px solid #607d8b;
+            width: 470px;
+            height: 40px;
+            padding: 5px;
+          }
+          textarea {
+            width: 100%;
+            border: 1px solid #607d8b;
+            resize: none;
+            padding: 5px;
+          }
+          .required-fild {
+            margin-right: 12px;
+            &:after {
+              position: absolute;
+              top: 0;
+              right: -10px;
+              content: '*';
+            }
+          }
+        }
+        button {
+          margin: 15px 0 20px 0;
+          color: white;
+          text-transform: uppercase;
+          text-decoration: none;
+          background: $bgButton;
+          padding: 10px 60px;
+          border: none;
+        }
+      }
+    }
+  }
+  footer {
+    padding: 5px 20px 15px;
+    span {
+      font-size: 13px;
+    }
+  }
+}

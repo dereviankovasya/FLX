@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  font: normal 16px/26px serif;
+  background: white; }
+  body header {
+    background: url(../img/header_background_v1.jpg) no-repeat center/cover;
+    height: 100vh;
+    margin-bottom: 20px; }
+    body header .top-wrapper {
+      display: flex;
+      justify-content: space-between; }
+      body header .top-wrapper img {
+        width: 230px;
+        height: 130px; }
+      body header .top-wrapper nav a {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: white;
+        display: inline-block;
+        padding: 20px 120px; }
+        body header .top-wrapper nav a:nth-child(2) {
+          border-right: 2px solid #ced7e8;
+          border-left: 2px solid #ced7e8; }
+    body header section {
+      text-align: center;
+      margin-top: 250px; }
+      body header section h1 {
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 26px; }
+      body header section a {
+        display: inline-block;
+        color: white;
+        text-transform: uppercase;
+        text-decoration: none;
+        background: #47d1d1;
+        padding: 15px 70px;
+        margin-top: 15px; }
+  body main {
+    margin: 0 auto;
+    width: 960px; }
+    body main .toolbar {
+      text-align: right;
+      padding-bottom: 10px; }
+      body main .toolbar input {
+        padding: 10px 15px; }
+    body main .post-list h1 {
+      color: black;
+      text-align: right;
+      text-transform: uppercase; }
+    body main .post-list article {
+      display: flex;
+      margin-bottom: 15px;
+      padding: 10px 15px 10px 10px;
+      background: #ebebe0; }
+      body main .post-list article img {
+        margin-right: 10px; }
+      body main .post-list article .btn {
+        float: right;
+        margin-top: 24px;
+        color: white;
+        text-transform: uppercase;
+        text-decoration: none;
+        background: #47d1d1;
+        padding: 10px 60px;
+        border: none; }
+      body main .post-list article .post .post-description {
+        font-size: 13px;
+        color: red;
+        padding: 10px 0;
+        border-bottom: 1px solid black; }
+      body main .post-list article .post h3 {
+        color: #47d1d1;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin: 5px 0; }
+      body main .post-list article .post p {
+        color: black;
+        font-size: 16px;
+        line-height: 1.6em; }
+    body main #about {
+      padding: 50px 15px; }
+      body main #about h1 {
+        color: black;
+        text-align: right;
+        text-transform: uppercase; }
+      body main #about p {
+        color: black;
+        margin-bottom: 25px;
+        font-size: 17px; }
+      body main #about img {
+        width: 100%; }
+    body main .contact-form {
+      text-align: right; }
+      body main .contact-form h1 {
+        color: black; }
+      body main .contact-form h4 {
+        color: black;
+        text-transform: uppercase;
+        font-size: 15px; }
+      body main .contact-form form div {
+        display: flex;
+        justify-content: space-between; }
+      body main .contact-form form label {
+        margin-top: 22px;
+        display: flex;
+        flex-direction: column; }
+        body main .contact-form form label span {
+          position: relative;
+          margin: 3px;
+          color: #47d1d1; }
+        body main .contact-form form label input {
+          border: 1px solid #607d8b;
+          width: 470px;
+          height: 40px;
+          padding: 5px; }
+        body main .contact-form form label textarea {
+          width: 100%;
+          border: 1px solid #607d8b;
+          resize: none;
+          padding: 5px; }
+        body main .contact-form form label .required-fild {
+          margin-right: 12px; }
+          body main .contact-form form label .required-fild:after {
+            position: absolute;
+            top: 0;
+            right: -10px;
+            content: '*'; }
+      body main .contact-form form button {
+        margin: 15px 0 20px 0;
+        color: white;
+        text-transform: uppercase;
+        text-decoration: none;
+        background: #47d1d1;
+        padding: 10px 60px;
+        border: none; }
+  body footer {
+    padding: 5px 20px 15px; }
+    body footer span {
+      font-size: 13px; }
+
+/*# sourceMappingURL=style1.css.map */
