@@ -30,11 +30,11 @@ function userCard(myIndex) {
 
     function takeCredits(amountOfCredits) {
         if (transactionLimit < amountOfCredits || balance < amountOfCredits) {
-            console.log('eror :Please, check your transaction and balance.');
+            console.log('error :Please, check your transaction and balance.');
             return false;
         } else {
             balance -= amountOfCredits;
-            historyLog('eror: no credits', amountOfCredits);
+            historyLog('error: no credits', amountOfCredits);
             return true;
         }
     }
@@ -46,7 +46,7 @@ function userCard(myIndex) {
 
     function transferCredits(amountOfCredits, card) {
         if (card === this) {
-            console.log('eror: Please, check your card details and try again');
+            console.log('error: Please, check your card details and try again');
             return;
         }
         if (takeCredits(amountOfCredits + tax * amountOfCredits)) {
@@ -76,7 +76,7 @@ class UserAccount {
             let card = userCard(this.cards.length + 1);
             this.cards.push(card);
         } else {
-            console.log('eror:number of cards is exceeded.');
+            console.log('error:number of cards is exceeded.');
         }
     }
 
