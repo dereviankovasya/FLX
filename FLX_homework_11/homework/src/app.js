@@ -55,11 +55,3 @@ button_delete.onclick = function(event){
     
   }
 }
-
-
-
-
-
-
-
-
