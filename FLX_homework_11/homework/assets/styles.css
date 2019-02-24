@@ -1,0 +1,80 @@
+body {
+	margin: 50px 0;
+}
+
+#root {
+	height: 500px;
+	width: 600px;
+	margin: 0 auto;
+	border: solid 2px black;
+	position: relative;
+}
+
+::placeholder {
+	padding: 0px 3px;
+	margin: 0px;
+}
+
+.form {
+	position: relative;
+	display: flex;
+	bottom: 0px;
+	height: 24px;
+	width: 100%;	
+}
+
+#addButton {
+	margin-left: 7px;
+}
+
+h1 {
+	text-align: center;
+}
+
+#addLimit {
+	display: none;
+	text-align: center;
+}
+
+.imgCat {
+	width: 50px;
+	height: 50px;
+}
+
+#textInput {
+	margin-left: 22px;
+	width: 85%;
+}
+
+.button_delete {
+	position: absolute;
+	right: 0;
+}
+
+button {
+	background: white;
+	border: 0px;
+	padding: 0px;
+	margin: 0px;
+	cursor: pointer;
+}
+
+ul {
+	border-top: 2px solid black;
+	margin: 20px 20px 10px 10px;
+}
+
+li {
+	line-height: 24px;
+	list-style-type: none;
+	position: relative;
+	height: 24px;
+	display: flex;
+	margin: 5px 5px 5px -30px;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	margin: 10px 10px 7px 280px;
+}
